@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Personal-Portfolio</title>
+
+    <link rel="stylesheet" type= "text/css" href="style.css">
+</head>
+<body>
+     
+    <div class="first">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul class="menu">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">MY PROJECTS</a></li>
+                <li><a href="#">CONTACT ME</a></li>
+
+            </ul>
+
+            
+        </nav>
+
+        <div class="content">
+            <h1>I'm <span>Bhavesh</span> Kamble</h1>
+            <p>
+                Hey Guys! I am developer and design websites, UI design. Here is my 
+                portfolio and work.
+            </p>
+            <a href="#">Contact me</a>
+            
+        </div>
+
+        <div class="imgbox">
+            <img src="images/blob.jpg"  class="backimg">
+            <img src="images/me.png"  class="mainimg">
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+        var icon =document.getElementsById("icon");
+        icon.onclick=function()
+        {
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme"))
+            {
+                icon.src="images/sunny.png";
+            }
+            else{
+                icon.src="images/moon.png";
+            }
+        }
+    </script>
+</body>
+</html>
